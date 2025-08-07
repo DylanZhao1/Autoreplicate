@@ -1,0 +1,15 @@
+Flask
+Flask-CORS
+langchain
+langchain-openai
+langchain-anthropic
+langchain-community
+langchain-core
+requests
+json5
+datetime
+typing-extensions
+gptpdf
+openai
+pandas
+numpy

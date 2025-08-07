@@ -104,6 +104,16 @@ class LangChainModelManager:
                     max_tokens=model_config["max_tokens"]
                 )
             
+            elif provider_name == "aihubmix":
+                # 使用OpenAI兼容接口处理aihubmix
+                return ChatOpenAI(
+                    api_key=provider_config["api_key"],
+                    base_url=provider_config["base_url"],
+                    model=model_config["model_name"],
+                    temperature=model_config.get("temperature", 0.3),
+                    #max_tokens=model_config.get("max_tokens", 4000)
+                )
+            
             else:
                 logger.warning(f"不支持的模型提供商: {provider_name}")
                 return None

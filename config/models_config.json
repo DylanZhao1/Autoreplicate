@@ -2,7 +2,7 @@
   "models": {
     "aihubmix": {
       "name": "AiHubMix",
-      "api_key": "sk-DXBfVdKe2NBHcppD5eA352Fe527c429dA6A0C747E92c1d89",
+      "api_key": "",
       "base_url": "https://aihubmix.com/v1",
       "models": {
         "gpt-4o": {
